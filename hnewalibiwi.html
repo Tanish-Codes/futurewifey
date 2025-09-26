@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to My Future Wife</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .letter-container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .letter-container h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2rem;
+      color: #d6336c;
+      margin-bottom: 15px;
+    }
+
+    .letter-container p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: #e63946;
+      font-size: 40px;
+      animation: floatUp 6s linear infinite;
+      text-align: center;
+    }
+
+    .heart span {
+      font-size: 0.7rem;
+      display: block;
+      margin-top: -10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.3);
+        opacity: 0;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .letter-container {
+        padding: 20px;
+        max-width: 90%;
+      }
+
+      .letter-container h1 {
+        font-size: 1.8rem;
+      }
+
+      .letter-container p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="letter-container">
+    <h1>To My Future Wife ❤️</h1>
+    <p>
+      🧿✨My love, My Jaan, My Darling, My Diksha,My future Wifey.
+      I loveeeee Youuuuu Forever till the end.
+      I will never leave you,I will always be with you✨🧿.
+   <div>"🧿💗TERA HATH PAKAD KE BITAU MEIN APNI PURI ZINDAGI🧿💗"</div>
+      "Tujhse na hou kabhi dur, humesha mein rahu tera,
+      "I will marry you"
+      Tere nakhre se leke tere gusse tk, sab sar ankho par...
+      kbhi mujhe chodh ke na jaana , I vaada you that I will humesha loveee you
+      my pyaari si cutu si my Jaan DIKSHAAA
+      tujhse dur jaane ka mein soch ni skta aur teri ankho mein aansu mein dekh ni skta
+      humesha tu rhe khush, yhi mein chahta hu"
+     <DIV> "🧿SADA MERI RHO🧿"</DIV>
+   <DIV>  I LOVEEE YOUUU MY BABYYYYY🧿💕</DIV>
+     muaaawwwh
+    </p>
+  </div>
+
+  <!-- Floating hearts -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️<span>Mi Amore</span>";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 7000);
+    }
+
+    setInterval(createHeart, 1000);
+  </script>
+</body>
+</html>
